@@ -29,18 +29,5 @@ public class ReceiverpgmController {
 		System.out.println(jsonObject);
 		return jsonObject.toString();
 	}
-	@RequestMapping("/reply/{message}")
-	public String sender(@PathVariable String message)
-	{
-		log.info(message);
-		msg=message;
-		return message;
-	}
-	@RequestMapping("/sent")
-	public String receiverReplay() 
-	{
-		log.info(msg);
-		return msg;
-	}
 }
 
