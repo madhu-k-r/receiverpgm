@@ -24,8 +24,8 @@ public class ReceiverpgmController {
 	{
 
 		JSONObject jsonObject = new JSONObject();
-		//jsonObject.put(" ", restTemplate.exchange("http://senderpgm-git-receiver-and-sender.apps.lab.tayana.in/sender", HttpMethod.GET,null,String.class).getBody());
-		jsonObject.put(" ", restTemplate.exchange("http://senderpgm-git-sender-receiver.apps.lab.tayana.in/sender", HttpMethod.GET,null,String.class).getBody());
+		jsonObject.put(" ", restTemplate.exchange("http://senderpgm-git-receiver-and-sender.apps.lab.tayana.in/sender", HttpMethod.GET,null,String.class).getBody());
+		//jsonObject.put(" ", restTemplate.exchange("http://senderpgm-git-sender-receiver.apps.lab.tayana.in/sender", HttpMethod.GET,null,String.class).getBody());
 		log.info("Sender message "+jsonObject);
 		System.out.println(jsonObject);
 		return jsonObject.toString();
